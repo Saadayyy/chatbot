@@ -1,13 +1,19 @@
 const express = require('express');
 const http = require('http');
+const https = require('https');
+const fs = require('fs');
 const socketIo = require('socket.io');
 const bodyParser = require('body-parser');
 const path = require('path');
+const forceHttps = require('express-force-https');
 const { loadFinancialData, loadKeywords, getFinancialData, generateResponse } = require('./financialLogic');
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
+
+// Force HTTPS
+app.use(forceHttps);
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
