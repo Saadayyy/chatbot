@@ -1,19 +1,13 @@
 const express = require('express');
 const http = require('http');
-const https = require('https');
-const fs = require('fs');
 const socketIo = require('socket.io');
 const bodyParser = require('body-parser');
 const path = require('path');
-const forceHttps = require('express-force-https');
-const { loadFinancialData, loadKeywords, getFinancialData, generateResponse } = require('./financialLogic');
+const { loadFinancialData, loadKeywords, getFinancialData, generateResponse } = require('./financialLogic.js');
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
-
-// Force HTTPS
-app.use(forceHttps);
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
@@ -53,7 +47,7 @@ io.on('connection', (socket) => {
       const financialData = getFinancialData();
       const userRecord = financialData.users.find(u => u.name.toLowerCase() === userInfo.name.toLowerCase() && u.id === userInfo.id);
       if (userRecord) {
-        socket.emit('message', `Hello, ${userInfo.name}! How can I assist you today? Would you like to ask about:\n- Spendings\n- Savings\n- Overview stocks\n- Income\n- Other\n by typing exit you leave the current questions.`);
+        socket.emit('message', `Hello, ${userInfo.name}! How can I assist you today? Would you like to ask about:\n- Spendings\n- Savings\n- Overview stocks\n- Income\n- Other\n by typing exit you leave there current questions.`);
       } else {
         socket.emit('message', 'Sorry, the provided ID is incorrect for the name you provided.');
         userInfo = {}; // Reset userInfo
@@ -73,6 +67,11 @@ io.on('connection', (socket) => {
     userInfo = {};
     userContext = {};
   });
+});
+
+// Serve the HTML file
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
