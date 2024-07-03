@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Saad",
+      "spendingOverYears": {
+        "2022": 5000,
+        "2023": 6000,
+        "2024": 7000
+      },
+      "savings": 5000,
+      "spending": {
+        "SPJan": 533,
+        "SPFeb": 760,
+        "SPMar": 522,
+        "SPApr": 455,
+        "SPMay": 500,
+        "SPJun": 577,
+        "SPJul": 536,
+        "SPAug": 600,
+        "SPSep": 700,
+        "SPOct": 650,
+        "SPNov": 580,
+        "SPDec": 620
+      },
+      "carLoan": 50000,
+      "utilityBills": 70,
+      "rent": 350,
+      "studentLoan": 1000000000,
+      "retirementFund":35000,
+      "insurances": 120,
+      "taxes": 50,
+      "creditScore": 100,
+      "mortgage": 1500,
+      "debt": 10000,
+      "income": 520,
+      "incomeSources": {
+        "job": 400,
+        "investments": 100,
+        "other": 20
+      },
+      "CanIAffordFood": 200,
+      "CanIAffordRent": 350,
+      "CanIAffordToLive": 800,
+      "assetOverview": [
+        "stocks: 50000",
+        "realEstate: 200000",
+        "savingsAccount: 10000",
+        "bonds: 5000",
+        "retirementFund: 30000"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Maryam",
+      "monthlyStatements": ["january_statement.pdf", "february_statement.pdf", "march_statement.pdf"],
+      "assetOverview": {
+        "stocks": 60000,
+        "realEstate": 250000,
+        "savingsAccount": 15000,
+        "bonds": 7000,
+        "retirementFund": 35000
+      },
+      "spendingOverYears": {
+        "2022": 6000,
+        "2023": 7000,
+        "2024": 8000
+      },
+      "imageFiles": ["asset_graph.png", "spending_graph.png"],
+      "savings": 7000,
+      "spending": {
+        "SPJan": 200,
+        "SPFeb": 300,
+        "SPMar": 250,
+        "SPApr": 270,
+        "SPMay": 260,
+        "SPJun": 280,
+        "SPJul": 300,
+        "SPAug": 320,
+        "SPSep": 330,
+        "SPOct": 310,
+        "SPNov": 290,
+        "SPDec": 340
+      },
+      "carLoan": 50000,
+      "utilityBills": 70,
+      "rent": 350,
+      "studentLoan": 1000000000,
+      "retirementFund":35000,
+      "insurances": 120,
+      "taxes": 50,
+      "creditScore": 100,
+      "mortgage": 1800,
+      "debt": 12000,
+      "income": 600,
+      "incomeSources": {
+        "job": 450,
+        "investments": 120,
+        "other": 30
+      }
+    },
+    {
+      "id": 3,
+      "name": "Fares",
+      "monthlyStatements": ["january_statement.pdf", "february_statement.pdf", "march_statement.pdf"],
+      "assetOverview": {
+        "stocks": 70000,
+        "realEstate": 300000,
+        "savingsAccount": 20000,
+        "bonds": 8000,
+        "retirementFund": 40000
+      },
+      "spendingOverYears": {
+        "2022": 7000,
+        "2023": 8000,
+        "2024": 9000
+      },
+      "imageFiles": ["asset_graph.png", "spending_graph.png"],
+      "savings": 10000,
+      "spending": {
+        "SPJan": 300,
+        "SPFeb": 350,
+        "SPMar": 320,
+        "SPApr": 340,
+        "SPMay": 360,
+        "SPJun": 370,
+        "SPJul": 380,
+        "SPAug": 400,
+        "SPSep": 410,
+        "SPOct": 390,
+        "SPNov": 380,
+        "SPDec": 420
+      },
+      "mortgage": 2000,
+      "debt": 15000,
+      "income": 700,
+      "incomeSources": {
+        "job": 500,
+        "investments": 150,
+        "other": 50
+      }
+    },
+    {
+      "id": 4,
+      "name": "Marlis",
+      "monthlyStatements": ["january_statement.pdf", "february_statement.pdf", "march_statement.pdf"],
+      "assetOverview": {
+        "stocks": 80000,
+        "realEstate": 350000,
+        "savingsAccount": 25000,
+        "bonds": 9000,
+        "retirementFund": 45000
+      },
+      "spendingOverYears": {
+        "2022": 8000,
+        "2023": 9000,
+        "2024": 10000
+      },
+      "imageFiles": ["asset_graph.png", "spending_graph.png"],
+      "savings": 15000,
+      "spending": {
+        "SPJan": 400,
+        "SPFeb": 450,
+        "SPMar": 420,
+        "SPApr": 440,
+        "SPMay": 460,
+        "SPJun": 470,
+        "SPJul": 480,
+        "SPAug": 500,
+        "SPSep": 510,
+        "SPOct": 490,
+        "SPNov": 480,
+        "SPDec": 520
+      },
+      "mortgage": 2200,
+      "debt": 20000,
+      "income": 800,
+      "incomeSources": {
+        "job": 600,
+        "investments": 160,
+        "other": 40
+      }
+    },
+    {
+      "id": 5,
+      "name": "Kero",
+      "monthlyStatements": ["january_statement.pdf", "february_statement.pdf", "march_statement.pdf"],
+      "assetOverview": {
+        "stocks": 90000,
+        "realEstate": 400000,
+        "savingsAccount": 30000,
+        "bonds": 10000,
+        "retirementFund": 50000
+      },
+      "spendingOverYears": {
+        "2022": 9000,
+        "2023": 10000,
+        "2024": 11000
+      },
+      "imageFiles": ["asset_graph.png", "spending_graph.png"],
+      "savings": 20000,
+      "spending": {
+        "SPJan": 500,
+        "SPFeb": 550,
+        "SPMar": 520,
+        "SPApr": 540,
+        "SPMay": 560,
+        "SPJun": 570,
+        "SPJul": 580,
+        "SPAug": 600,
+        "SPSep": 610,
+        "SPOct": 590,
+        "SPNov": 580,
+        "SPDec": 620
+      },
+      "mortgage": 2500,
+      "debt": 25000,
+      "income": 900,
+      "incomeSources": {
+        "job": 700,
+        "investments": 170,
+        "other": 30
+      }
+    }
+  ]
+}

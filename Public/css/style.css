@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+#chat-input {
+    width: calc(100% - 100px);
+    display: inline-block;
+}
+
+.btn-primary {
+    width: 80px;
+}
